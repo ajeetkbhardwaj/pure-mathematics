@@ -1,17 +1,15 @@
 site_name: Quantum Learning
 
-
 theme:
     name: mkdocs
     logo: assets/images/logo.jpeg
-    features:
-        #- navigation.tabs
-        - header.autohide
-        - navigation.indexes
+
 nav:
   - Home : index.md
-  - Fundamentals of Computation :
+  - Fundamentals-of-Quantum-Computation :
     - Foundation/Ch-00.md
+    - Foundation/Ch-01.md
+    - Foundation/Ch-02.md
 
 extra_javascript:
   - javascripts/mathjax.js
