@@ -10,8 +10,8 @@ theme:
         - navigation.indexes
 nav:
   - Home : index.md
-  - Foundation :
-    - Foundation/index.md
+  - Fundamentals of Computation :
+    - Foundation/Ch-00.md
 
 extra_javascript:
   - javascripts/mathjax.js
