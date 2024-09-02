@@ -6,7 +6,7 @@ theme:
 
 nav:
   - Home : index.md
-  - Fundamentals-of-Quantum-Computation :
+  - Fundamentals of Quantum Computation :
     - Foundation/Ch-00.md
     - Foundation/Ch-01.md
     - Foundation/Ch-02.md
