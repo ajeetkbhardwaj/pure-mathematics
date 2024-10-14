@@ -2,17 +2,12 @@ site_name: Quantum Learning
 
 theme:
     name: mkdocs
-    logo: assets/images/logo.jpeg
-
 nav:
-
-
   - Home : index.md
   - Foundation :
     - Foundation/Ch-00.md
     - Foundation/Ch-01.md
     - Foundation/Ch-02.md
-
   - MCQ-Problems :
      - MCQ-Problems/ML/ProblemSet-01.md
      - MCQ-Problems\readme.md
