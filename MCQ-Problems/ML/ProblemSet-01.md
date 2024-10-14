@@ -1,11 +1,4 @@
----
-marp: true
-theme: default
-class: invert
-math: mathjx
-size: 4:3
-paginate: true
----
+
 <!--header: "Ajeet Kumar & ajeetskbp9843@gmail.com"-->
 
 # <!--fit-->MCQ-Problems
@@ -245,3 +238,170 @@ b) A – Training Set, B – Test Set, C – Cross-Validation Set
 c) A – Training Set, B – Test Set, C – Domain Set
 d) A – Test Set, B – Domain Set, C – Training Set
 > Explanation: Domain Set comprises of the total input data set. It is usually divided into a training set, a test set and a cross-validation set in the ratio 3:1:1. Since the learner learns about the data set from the training set, the later is usually larger than the test and cross-validation set.
+
+---
+**26. The true error is available to the learner.
+a) True
+b) False
+> Explanation: True error is calculated with respect to the probability distribution of the generation of dataset instances and labeling function. These two are not available to the learner. Hence, the learner cannot calculate the true error.
+
+---
+**27.  What is one of the drawbacks of Empirical Risk Minimization?**
+a) Underfitting
+b) Both Overfitting and Underfitting
+c) Overfitting
+d) No drawbacks
+> Explanation: Empirical Risk Minimization makes the learner output a predictor which gives the minimum error on the training set. This often leads to a predictor that is specifically designed to be accurate on the training data set but fails to be highly accurate on the test set, as the predictor was training set-specific. This is overfitting.
+
+---
+**28. The error available to the learner is ______**
+a) true error
+b) error of the classifier
+c) training error
+d) testing error
+
+> Explanation: The learner only knows about the error it incurred over the training set instances. It is minimized by the learner to produce the labeling function. This is then used on the testing set to generate a testing error. The error produced by randomly selecting an instance from the dataset, and misclassifying it using the labeling function.
+
+---
+**29. Which is the more desirable way to reduce overfitting?**
+a) Giving an upper bound to the size of the training set
+b) Making the test set larger than the training set
+c) Giving an upper bound to the accuracy obtained on the training set
+d) Overfitting cannot be reduced
+
+Explanation: More the number of training set examples, more specific the predictor is going to be to the training set. Hence reducing it can reduce overfitting. Making the test set larger than the training set will lead to underfitting, which is not desirable. Giving an upper bound on accuracy can abruptly stop the learner at a premature stage.
+
+---
+**30.  What is the relation between Empirical Risk Minimization and Training Error?**
+a) ERM tries to maximize training error
+b) ERM tries to minimize training error
+c) It depends on the dataset
+d) ERM is not concerned with training error
+> Explanation: ERM makes the learner develop a predictor which works well on the training data (data available to the learner). Its aim is to minimize the error. Lesser the error, the better is the predictor (not considering overfitting).
+
+---
+
+**31. What is assumed while using empirical risk minimization with inductive bias?**
+a) The learner has some prior knowledge about training data
+b) The learner has some knowledge about labeling function
+c) Reduction of overfitting may lead to underfitting
+d) No assumptions are made
+
+> Explanation: The learner must choose a hypothesis from a set of H, reduced hypothesis space. Since the choice is determined before seeing the training set, the learner needs to have prior knowledge of training data.
+---
+
+**32. The hypothesis space H for inductive bias is a finite class.**
+a) False
+b) True
+
+> Explanation: The hypothesis space H contains a finite number of hypothesizes. The learner is restricted to chose from only these hypothesizes. If hypothesis space is not finite, there is no question of restriction.
+---
+**33. The assumption that the training set instances are independently and identically distributed is known as the __________**
+a) empirical risk assumption
+b) inductive bias assumption
+c) i.i.d. assumption
+d) training set rule
+
+> Explanation: The three letters of i.i.d stands for independently and identically distributed. The instances are not dependent on each other. Every one of them is unique, and it is assumed that the instances follow a certain distribution.
+**34. Delta is the __________ parameter of the prediction.**
+a) training
+b) confidence
+c) accuracy
+d) computing
+
+> Explanation: The confidence parameter is used to state that the chosen hypothesis will give a successful outcome with a certain probability. This probability is given by (1 – delta).
+Sanfoundry Glob
+
+---
+**35.  Who introduced the concept of PAC learning?**
+a) Francis Galton
+b) Reverend Thomas Bayes
+c) J.Ross Quinlan
+d) Leslie Valiant
+> Explanation: Valiant introduced PAC learning. Galton introduced Linear Regression. Quinlan introduced the Decision Tree. Bayes introduced Bayes’ rule and Naïve-Bayes theorem.
+
+---
+
+**36. When was PAC learning invented?**
+a) 1874
+b) 1974
+c) 1984
+d) 1884
+> Explanation: Leslie Valiant was the inventor of PAC learning. He described it in 1984. It was introduced as a part of the Computational Learning Theory.
+
+---
+
+**37. The full form of PAC is ______**
+a) Partly Approximation Computation
+b) Probability Approximation Curve
+c) Probably Approximately Correct
+d) Partly Approximately Correct
+
+> Explanation: Probably Approximately Correct tries to build a hypothesis that can predict with low generalization error (approximately correct), with high probability (probably).
+
+---
+
+**38. What can be explained by PAC learning?**
+a) Sample Complexity
+b) Overfitting
+c) Underfitting
+d) Label Function
+
+> Explanation: PAC learning can give a rough estimate of the number of training examples required by the learning algorithm to develop a hypothesis with the desired accuracy.
+
+---
+
+5. What is the significance of epsilon in PAC learning?
+a) Probability of approximation < epsilon
+b) Maximum error < epsilon
+c) Minimum error > epsilon
+d) Probability of approximation = delta – epsilon
+
+> Explanation: A concept is PAC learnable by L if L can output a hypothesis with error < epsilon. Hence the maximum error obtained by the hypothesis should be less than epsilon. Epsilon is usually 5% or 1%.
+
+---
+
+6. What is the significance of delta in PAC learning?
+a) Probability of approximation < delta
+b) Error < delta
+c) Probability = 1 – delta
+d) Probability of approximation = delta – epsilon
+
+> Explanation: A concept C is PAC learnable by L if L can predict a hypothesis with a certain error with probability equal to 1-delta. Delta is usually very low.
+---
+7. One of the goals of PAC learning is to give __________
+a) maximum accuracy
+b) cross-validation complexity
+c) error of classifier
+d) computational complexity
+
+> Explanation: PAC learning tells us about the amount of effort required for computation so that a learner can come up with a successful hypothesis with high probability.
+
+---
+
+8. A learner can be deemed consistent if it produces a hypothesis that perfectly fits the __________
+a) cross-validation data
+b) overall dataset
+c) test data
+d) training data
+
+> Explanation: PAC learning is concerned with the behavior of the learning algorithm. The learner has access to only the training data set.
+
+---
+9. Number of hypothesizes |H| = 973, probability = 95%, error < 0.1. Find minimum number of training examples, m, required.
+a) 98.8
+b) 99.8
+c) 99
+d) 98
+
+> Explanation: Probability = 1 – delta (d) = 0.95; d = 0.05. Error < epsilon (e); e = 0.1.
+m >= 1/e (ln |H| + ln (1/d)) i.e. m> = 1/0.1(ln 973 + ln (1/0.05)) i.e. m>=98.8
+Since number of training examples, m, has to be an integer, answer is 99.
+
+---
+
+10. In PAC learning, sample complexity grows as the logarithm of the number of hypothesizes.
+a) False
+b) True
+
+> Explanation: Sample complexity is the number of training examples required to converge to a successful hypothesis. It is given by m >= 1/e (ln |H| + ln (1/d)), where m is the number of training examples and H is hypothesis space.
