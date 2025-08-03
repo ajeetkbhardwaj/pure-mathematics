@@ -61,11 +61,8 @@ copyright: Copyright &copy; 2024 Ajeet Kumar
 
 nav:
   - Home : index.md
-  - Foundation :
-    - Foundation/Ch-00.md
-    - Foundation/Ch-01.md
-    - Foundation/Ch-02.md
-  - MCQ-Problems :
-     - MCQProblems/ML/ProblemSet-01.md
-     - MCQProblems/readme.md
+  - Machine Learning:
+      - mlquery/questions1.md
+      - mlquery/questions2.md
+ 
 
