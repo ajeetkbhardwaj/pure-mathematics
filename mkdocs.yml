@@ -1,4 +1,4 @@
-site_name: Applied Mathematics
+site_name: Pure Mathematics
 theme:
   name: material
   features:
@@ -54,10 +54,10 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-repo_url: https://github.com/ajeetkbhardwaj/Lab-for-Applied-Mathematics
+repo_url: https://github.com/ajeetkbhardwaj/pure-mathematics
 repo_name: Ajeet Kumar
 
-copyright: Copyright &copy; 2024 Ajeet Kumar
+copyright: Copyright &copy; 2025 Ajeet Kumar
 
 nav:
   - Home : index.md
