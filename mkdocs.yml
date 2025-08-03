@@ -62,7 +62,7 @@ copyright: Copyright &copy; 2025 Ajeet Kumar
 nav:
   - Home : index.md
   - Machine Learning:
-      - mlquery/questions1.md
-      - mlquery/questions2.md
+    - mlquery/questions1.md
+    - mlquery/questions2.md
  
 
